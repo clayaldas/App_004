@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">App_004</string>
+
+    <string name="textViewTitle_Text">Mantenimiento de Clientes</string>
+    <string name="editTextCode_Hint">Ingrese el código</string>
+    <string name="editTextName_Hint">Ingrese el nombre</string>
+    <string name="editTextLastName_Hint">Ingrese el apellido</string>
+    <string name="editTextEdge_Hint">Ingrese la edad</string>
+
+    <string name="buttonInsert_Text">Insertar</string>
+    <string name="buttonSearch_Text">Buscar</string>
+    <string name="buttonUpdate_Text">Modificar</string>
+    <string name="buttonDelete_Text">Eliminar</string>
+
+</resources>
