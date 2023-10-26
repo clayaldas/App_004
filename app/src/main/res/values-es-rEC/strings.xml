@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">App_004</string>
+
+    <string name="textview_title_text">Ingreso al sistema EC</string>
+    <string name="edittext_user_hint">Ingrese el usuario EC</string>
+    <string name="edittext_password_hint">Ingrese la clave EC</string>
+
+    <string name="button_ok_text">Aceptar</string>
+
+</resources>

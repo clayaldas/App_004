@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">App_004</string>
+
+    <string name="textview_title_text">Login to the system</string>
+    <string name="edittext_user_hint">Enter user name</string>
+    <string name="edittext_password_hint">Enter password</string>
+
+    <string name="button_ok_text">Ok</string>
+
 </resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">App_004</string>
+
+    <string name="textview_title_text">Faça login no sistema</string>
+    <string name="edittext_user_hint">Insira o usuário</string>
+    <string name="edittext_password_hint">Digite a senha</string>
+
+    <string name="button_ok_text">Aceitar</string>
+
+</resources>
