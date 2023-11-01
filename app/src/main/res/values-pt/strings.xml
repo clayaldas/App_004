@@ -8,4 +8,18 @@
 
     <string name="button_ok_text">Aceitar</string>
 
+    <string name="textview_titleclients_text">Mantenimiento: Clientes</string>
+    <string name="edittext_code_hint">Ingrese el código</string>
+    <string name="edittext_name_hint">Ingrese el nombre</string>
+    <string name="edittext_lastname_hint">Ingrese el apelllido</string>
+    <string name="edittext_phone_hint">Ingrese el teléfono</string>
+    <string name="edittext_balance_hint">Ingrese el saldo</string>
+
+    <string name="button_insert_text">Insertar</string>
+    <string name="button_search_text">Buscar</string>
+    <string name="button_delete_text">Borrar</string>
+    <string name="button_modify_text">Modificar</string>
+
+
+
 </resources>
