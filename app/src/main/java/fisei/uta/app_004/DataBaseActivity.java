@@ -117,6 +117,7 @@ public class DataBaseActivity extends AppCompatActivity {
         String SELECT = "SELECT Name, LastName, Phone, Balance FROM Clients WHERE Code=" + code;
 
         Cursor cursor = sqLiteDatabase.rawQuery(SELECT, null  );
+        cursor.close();
 
         if (cursor.moveToFirst()) {
             editTextName.setText(cursor.getString(0));
@@ -137,12 +138,12 @@ public class DataBaseActivity extends AppCompatActivity {
 
         String code = editTextCode.getText().toString();
 
-        Client client = new Client();
+        Client client;
         ClientDAL clientDAL = new ClientDAL(this);
+
         client = clientDAL.selectByPrimaryKey(Integer.parseInt(code));
 
-
-        if (client != null ) {
+                if (client != null ) {
             editTextName.setText(client.getName());
             editTextLastName.setText(client.getLastName());
             editTextPhone.setText(client.getPhone());
@@ -153,6 +154,8 @@ public class DataBaseActivity extends AppCompatActivity {
                     "No existe el registro indicado", Toast.LENGTH_SHORT).show();
             ClearFields();
         }
+
+
     }
     public void onClickButtonDelete (View view) {
         DataBaseManager dataBaseManager = new DataBaseManager(this, "SEXTO_DB", null, 1);

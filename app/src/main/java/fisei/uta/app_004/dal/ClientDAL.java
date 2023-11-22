@@ -23,7 +23,7 @@ public class ClientDAL {
     }
 
     private void open(boolean openMode) {
-        dataBaseManager = new DataBaseManager(context, "SEXTO_TI", null, 1);
+        dataBaseManager = new DataBaseManager(context, "SEXTO_DB", null, 1);
 
         if (openMode==true) {
             sqLiteDatabase = dataBaseManager.getWritableDatabase();
@@ -71,14 +71,24 @@ public class ClientDAL {
                              "FROM Clients " +
                              "WHERE Code=" + code;
 
+
             Cursor cursor = sqLiteDatabase.rawQuery(SELECT, null  );
 
+            client = new Client();
+
             if (cursor.moveToFirst()) {
+                Toast.makeText(context.getApplicationContext(),
+                        "cursor", Toast.LENGTH_SHORT).show();
+
                 client.setName(cursor.getString(0));
                 client.setLastName(cursor.getString(1));
                 client.setPhone(cursor.getString(2));
                 client.setBalance(Double.parseDouble(cursor.getString(3)));
             }
+
+
+
+
         }
         catch (Exception e) {
             throw e;
