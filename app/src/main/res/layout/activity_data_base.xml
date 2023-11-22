@@ -11,10 +11,14 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/textview_titleclients_text" />
+        android:gravity="center"
+        android:text="@string/textview_titleclients_text"
+        android:textColor="@color/design_default_color_secondary_variant"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/editTextCode"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -26,7 +30,7 @@
         tools:ignore="VisualLintTextFieldSize" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/editTextName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -38,7 +42,7 @@
         tools:ignore="VisualLintTextFieldSize" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/editTextLastName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -62,7 +66,7 @@
         tools:ignore="VisualLintTextFieldSize" />
 
     <EditText
-        android:id="@+id/editTextNumberDecimal"
+        android:id="@+id/editTextBalance"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:autofillHints=""
@@ -74,30 +78,41 @@
         tools:ignore="VisualLintTextFieldSize" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonInsert"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="onClickButtonInsert"
         android:text="@string/button_insert_text"
         tools:ignore="VisualLintButtonSize" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonSearch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="onClickButtonSearch"
         android:text="@string/button_search_text"
         tools:ignore="VisualLintButtonSize" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/buttonDelete"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="onClickButtonDelete"
         android:text="@string/button_delete_text"
         tools:ignore="VisualLintButtonSize" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/buttonModify"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="onClickButtonModify"
         android:text="@string/button_modify_text"
         tools:ignore="VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/buttonSelecctAll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickButtonSelectAll"
+        android:text="@string/button_select_all_text" />
 </LinearLayout>
